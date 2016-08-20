@@ -48,27 +48,20 @@
 
     <div class="container">
     	<div class="hero-unit">
-		  <h1>Kubernetes Cluster Demo</h1>
-		  <p>This web app uses a lightweight Java Graphviz server running on a Kubernetes Cluster on Google Container Engine. 
-		  This app itself is running under Jetty server on a Docker container.
-		  More info
-			  <a href="http://omerio.com/">here</a>. 
-	      </p>
-	      <p>  
-			  The source code is in GitHub:
-		  </p>	  
-		  <ul>
-		  	<li><strong>Graphviz Server: </strong><a href="https://github.com/omerio/graphviz-server">https://github.com/omerio/graphviz-server</a></li>
-		  	<li><strong>This App: </strong><a href="https://github.com/omerio/graphviz-webapp">https://github.com/omerio/graphviz-webapp</a></li>
-		  </ul>
-		  
-		  
-		</div>
-	  	<form class="form-signin">
-		  <div class="control-group">
-		    <label class="control-label" for="inputEmail">DOT source ( <b>must start with digraph G {</b> ):</label>
-		    <div class="controls">
-		      <textarea rows="10" class="js-dot-source">
+	    <h1>Kubernetes Demo</h1>
+	    <p>This web app uses a lightweight Java Graphviz server running on a Kubernetes Cluster on Google Container Engine. 
+	        This app itself is running under Jetty server on a Docker container.
+	    </p>
+            <p>
+                This demo was obtained from <a href="https://github.com/omerio/graphviz-server">https://github.com/omerio/graphviz-server</a> and is used
+                primarily as a simple webapplication to show case Kubernetes deployment using Jenkins. 
+            </p>
+	</div>
+	<form class="form-signin">
+	    <div class="control-group">
+	        <label class="control-label" for="inputEmail">DOT source ( <b>must start with digraph G {</b> ):</label>
+		<div class="controls">
+		<textarea rows="10" class="js-dot-source">
 digraph G {
   rankdir=TB
   "START" [style="filled", fillcolor="gray", shape="circle"];
