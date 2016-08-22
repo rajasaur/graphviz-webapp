@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Kubernetes Cluster Demo</title>
+    <title>Kubernetes Demo on Mirantis Openstack</title>
     
 		
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,13 +48,15 @@
 
     <div class="container">
     	<div class="hero-unit">
-	    <h1>Kubernetes Demo</h1>
-	    <p>This web app uses a lightweight Java Graphviz server running on a Kubernetes Cluster on Google Container Engine. 
-	        This app itself is running under Jetty server on a Docker container.
+	    <h1>Kubernetes Demo on Mirantis Openstack</h1>
+	    <p>This web app uses a lightweight Java Graphviz server running on a Kubernetes Cluster on nodes provisioned by Mirantis Openstack. 
+	        This app itself is running under Jetty server on a Docker container. The container runs on Minion Nodes orchestrated by a Kubernetes Controller.
 	    </p>
             <p>
                 This demo was obtained from <a href="https://github.com/omerio/graphviz-server">https://github.com/omerio/graphviz-server</a> and is used
-                primarily as a simple webapplication to show case Kubernetes deployment using Jenkins. 
+                primarily as a simple webapplication to show case Kubernetes deployment using Jenkins. Jenkins when it builds successfully builds the entire
+                application as a docker image, which gets pushed to DockerHub and updates Kuberenetes' ReplicationControllers to update the nodes to use the
+                latest image.
             </p>
 	</div>
 	<form class="form-signin">
