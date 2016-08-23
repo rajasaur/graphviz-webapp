@@ -15,7 +15,7 @@ RUN apt-get -y update && apt-get install -y \
 # Deploy the WAR file to /var/lib/jetty/
 RUN git clone https://github.com/rajasaur/graphviz-webapp /opt/graphviz-webapp \
 		&& cd /opt/graphviz-webapp \
-		&& mvn package \
+		&& mvn clean package \
 		&& cp /opt/graphviz-webapp/target/graphviz-webapp.war /var/lib/jetty/webapps/ROOT.war
 
 
